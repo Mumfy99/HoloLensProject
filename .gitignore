@@ -1,0 +1,44 @@
+# Unity-generated folders
+Library/
+Temp/
+Logs/
+Builds/
+UserSettings/
+Obj/
+
+# VS / Rider / IDE
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.user
+*.uni# Unity-generated folders
+Library/
+Temp/
+Logs/
+Builds/
+UserSettings/
+Obj/
+
+# VS / Rider / IDE
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.user
+*.unityproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Unity specific
+*.pidb
+*.suo
+*.userprefs
+*.booproj
+*.svd
+
+# Debug / misc
+debug.log
+
