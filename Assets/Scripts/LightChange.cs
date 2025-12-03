@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class LightChange : MonoBehaviour
 {
-    // --- THIS IS THE CONNECTOR ---
-    // By making this 'public', Unity creates a slot in the Inspector.
-    // We call it 'bulbPart' so we know what to put there.
     public Renderer bulbPart; 
 
-    // Define the colors we want to use
-    // [ColorUsage(true, true)] allows High Dynamic Range (HDR) for glowing brightness
+    // Define the Materials we want to use
     public Material Grey;
     public Material Green;
     public Material Yellow;
@@ -18,13 +14,11 @@ public class LightChange : MonoBehaviour
 
     void Start()
     {
-        // This runs when the hololens starts. 
         ChangeMaterial(Grey);
     }
 
     void Update()
     {
-        // Simple test inputs
         if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeMaterial(Grey);
         if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeMaterial(Green);
         if (Input.GetKeyDown(KeyCode.Alpha3)) ChangeMaterial(Yellow);
@@ -33,7 +27,7 @@ public class LightChange : MonoBehaviour
 
     void ChangeMaterial(Material newMat)
     {
-        // SAFETY CHECK: This prevents errors if you forgot to connect the part!
+        // SAFETY CHECKS
         if (bulbPart == null) 
         {
             Debug.LogError("You forgot to drag the lamp part into the script slot!");
@@ -46,7 +40,6 @@ public class LightChange : MonoBehaviour
             return; 
         }
 
-        // --- THIS CHANGES THE MATERIAL ---
         // We access the 'material' property of the connected part
         bulbPart.material = newMat;
     }
