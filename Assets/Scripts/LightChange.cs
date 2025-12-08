@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LightChange : MonoBehaviour
 {
+    public InfluxAlarmDataProvider alarmDataScript;
+
     public Renderer bulbPart; 
 
     // Define the Materials we want to use
@@ -19,28 +21,29 @@ public class LightChange : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeMaterial(Grey);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeMaterial(Green);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) ChangeMaterial(Yellow);
-        if (Input.GetKeyDown(KeyCode.Alpha4)) ChangeMaterial(Red);
+        // if (alarmDataScript == null) return;
+
+        bool activeAlarm = alarmDataScript.IsAnyAlarm();
+        // if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeMaterial(Green);
+        // if (Input.GetKeyDown(KeyCode.Alpha3)) ChangeMaterial(Yellow);
+
+        if (activeAlarm) ChangeMaterial(Red);
+        // else if () ChangeMaterial(Yellow);
+        else ChangeMaterial(Grey);
     }
 
     void ChangeMaterial(Material newMat)
     {
         // SAFETY CHECKS
-        if (bulbPart == null) 
+        if (bulbPart == null || newMat == null) 
         {
-            Debug.LogError("You forgot to drag the lamp part into the script slot!");
+            Debug.LogError("Forgot to attach the bulb or material");
             return;
         }
-
-        if (newMat == null)
+        else if (bulbPart.material != newMat)
         {
-            Debug.LogError("You forgot to drag the material into the script slot!");
-            return; 
+            bulbPart.material = newMat;
         }
 
-        // We access the 'material' property of the connected part
-        bulbPart.material = newMat;
     }
 }
