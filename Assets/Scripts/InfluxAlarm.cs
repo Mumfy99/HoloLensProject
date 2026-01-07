@@ -9,9 +9,9 @@ using TMPro;
 public class InfluxAlarm : MonoBehaviour
 {
     [Header("InfluxDB Settings")]
-    public string influxUrl = "http://130.130.130.209:8086";
-    public string orgId = "66751340bcb17c31";
-    public string apiToken = "PASTE_YOUR_TOKEN_HERE";
+    public string influxUrl = "http://130:130:130:205:1880";
+    public string orgId = "8d72c1fb56ba4914";
+    public string apiToken = "CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==";
 
     [Header("Query Settings")]
     // SIF 401 → "Sif 401"

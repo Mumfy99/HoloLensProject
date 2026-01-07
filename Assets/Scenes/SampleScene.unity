@@ -972,9 +972,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c789ffca33dbe4d94d45e67d730469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influxUrl: http://130.130.130.209:8086
-  orgId: 66751340bcb17c31
-  apiToken: rxFXXk69LjakTyXY4TLCKbncEe6LNIBCqQ46SuUBVwV-CvLw3M6NsoI5h7TcbpKHn1FLd344ZiBrmv3pPFL1Rg==
+  influxUrl: http://130.130.130.205:1880
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
   bucketName: Sif 402
   measurement: Voltage
   field: voltage
@@ -1247,9 +1247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25938033fcb72a64d8ecfdc4dfc200e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influxUrl: http://130.130.130.209:8086
-  orgId: 66751340bcb17c31
-  apiToken: rxFXXk69LjakTyXY4TLCKbncEe6LNIBCqQ46SuUBVwV-CvLw3M6NsoI5h7TcbpKHn1FLd344ZiBrmv3pPFL1Rg==
+  influxUrl: http://130.130.130.205:1880
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
   bucketName: Sif 401
   measurement: alarm_code
   field: alarm
@@ -2404,9 +2404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c789ffca33dbe4d94d45e67d730469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influxUrl: http://130.130.130.209:8086
-  orgId: 66751340bcb17c31
-  apiToken: rxFXXk69LjakTyXY4TLCKbncEe6LNIBCqQ46SuUBVwV-CvLw3M6NsoI5h7TcbpKHn1FLd344ZiBrmv3pPFL1Rg==
+  influxUrl: http://130.130.130.205:1880
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
   bucketName: Sif 401
   measurement: RunningTime
   field: running_time
@@ -3917,9 +3917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c789ffca33dbe4d94d45e67d730469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influxUrl: http://130.130.130.209:8086
-  orgId: 66751340bcb17c31
-  apiToken: rxFXXk69LjakTyXY4TLCKbncEe6LNIBCqQ46SuUBVwV-CvLw3M6NsoI5h7TcbpKHn1FLd344ZiBrmv3pPFL1Rg==
+  influxUrl: http://130.130.130.205:1880
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
   bucketName: Sif 401
   measurement: Voltage
   field: voltage
@@ -4817,9 +4817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c789ffca33dbe4d94d45e67d730469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influxUrl: http://130.130.130.209:8086
-  orgId: 66751340bcb17c31
-  apiToken: rxFXXk69LjakTyXY4TLCKbncEe6LNIBCqQ46SuUBVwV-CvLw3M6NsoI5h7TcbpKHn1FLd344ZiBrmv3pPFL1Rg==
+  influxUrl: http://130.130.130.205:1880
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
   bucketName: Sif 402
   measurement: RunningTime
   field: running_time
