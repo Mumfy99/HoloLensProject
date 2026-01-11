@@ -408,6 +408,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122449324}
   m_CullTransparentMesh: 1
+--- !u!1 &156397405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156397407}
+  - component: {fileID: 156397408}
+  m_Layer: 0
+  m_Name: AlarmManager_402
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156397407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156397405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08559629, y: 0.40630317, z: 4.095067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156397408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156397405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72276815e244e914280bf952cd88eb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influxUrl: http://130.130.130.205:8086
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
+  bucketName: Sif 402
+  range: -1h
+  refreshIntervalSeconds: 1
+  measurement: alarm_code
+  field: alarm
+  minFeederMeasurement: minfeeder
+  bdFeederMeasurement: bdfeeder
 --- !u!1 &167074270
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +687,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262625358}
   m_CullTransparentMesh: 1
+--- !u!1 &277541971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277541973}
+  - component: {fileID: 277541974}
+  m_Layer: 0
+  m_Name: AlarmManager_401
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &277541973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277541971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08559629, y: 0.40630317, z: 4.095067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277541974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277541971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca149904ee76a14db125aedde26b733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  influxUrl: http://130.130.130.205:8086
+  orgId: 8d72c1fb56ba4914
+  apiToken: CVU6Py8WeUXfkQcdpXXSFJg2MvvbV5PiPEfK2KEbK0HSssgG9QN4YbSVUl-Mo7T4_7wJGX6CL_ZB-_UAQI4Dmg==
+  bucketName: Sif 401
+  range: -1h
+  refreshIntervalSeconds: 1
+  measurement: alarm_code
+  field: alarm
+  minFeederMeasurement: minfeeder
+  bdFeederMeasurement: bdfeeder
 --- !u!1 &279150381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,6 +3222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8732c830248614d907d81722da3d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  influxScript: {fileID: 277541974}
   bulbPart: {fileID: 1148361798}
   Grey: {fileID: 2100000, guid: 5f4f57ea0642a45429e0c68a1bc70678, type: 2}
   Green: {fileID: 2100000, guid: 54df31b97d7e6eb499e18f0fc29717c7, type: 2}
@@ -4683,9 +4792,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715829423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e8732c830248614d907d81722da3d22, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ffead9d1a06324d8ffb00e1344b1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  influxScript: {fileID: 156397408}
   bulbPart: {fileID: 1715829422}
   Grey: {fileID: 2100000, guid: 5f4f57ea0642a45429e0c68a1bc70678, type: 2}
   Green: {fileID: 2100000, guid: 54df31b97d7e6eb499e18f0fc29717c7, type: 2}
@@ -6089,3 +6199,5 @@ SceneRoots:
   - {fileID: 1012632694}
   - {fileID: 279150385}
   - {fileID: 1835535090}
+  - {fileID: 277541973}
+  - {fileID: 156397407}
